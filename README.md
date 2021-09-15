@@ -6,7 +6,9 @@
 해결: React.FC에 <any>를 붙여 에러는 지웠지만 아직 props는 전달하지 못함(이슈 5번으로 해결)
 * 이슈 4: 조금 더 리액트답게 만들어야 할 필요성이 있어보임 
 해결: 아직 진행중(이슈 5번으로 해결)
-* 이슈 5: 컴포넌트를 리팩토링하던 중 캘리브래이션된 값을 전달해야하는 상황이생김 처음엔 setState를 props로 보내어 해결하려 했으나 setState는 보내지지만 history, location 등 props가 전달이 안됨
+* 이슈 5: 컴포넌트를 리팩토링하던 중 캘리브래이션된 값을 전달해야하는 상황이생김 처음엔 setState를 해결: props로 보내어 해결하려 했으나 setState는 보내지지만 history, location 등 props가 전달이 안됨
+* 이슈 6: './'에 gazr컴포넌트를 route하였더니 작동하지않음.
+해결: route에 exact를 줘서 url이 완전히 맞을 때만 컴포넌트를 호출하게함
 <<<<<<< HEAD
 해결: props.history.push로 값을 전달하였고 props.location.state로 값을 전달받음
 =======

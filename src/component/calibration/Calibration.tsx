@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import Seeso from 'seeso/easy-seeso';
 // 샐리브레이션을 하는 페이지
 const Calibration: React.FC<any> = (props: any) => {
